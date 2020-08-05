@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import INBOOK from '../components/inBook.vue'
 
 Vue.use(VueRouter)
 
@@ -28,15 +29,6 @@ const routes = [
     }
   },
   {
-    path: '/login',
-    name: 'Login',
-    component: () => import(/* webpackChunkName: "login" */ '../views/Login.vue'),
-    meta: {
-      login: false,
-      title: '登入'
-    }
-  },
-  {
     path: '/newbook',
     name: 'Newbook',
     component: () => import(/* webpackChunkName: "newbook" */ '../views/Newbook.vue'),
@@ -57,26 +49,56 @@ const routes = [
     }
   },
   {
+    // inbook:id
+    path: '/inbook',
+    name: 'inBook',
+    component: INBOOK,
+    meta: {
+      login: false,
+      title: '書籍',
+      transition: 'fade'
+    }
+  },
+  {
     path: '/buy',
     name: 'Buy',
     component: () => import(/* webpackChunkName: "buy" */ '../views/Buy.vue'),
     meta: {
-      login: true,
+      login: false,
       title: '購物車'
+    }
+  },
+  {
+    path: '/reg',
+    name: 'Reg',
+    component: () => import(/* webpackChunkName: "reg" */ '../views/Reg.vue'),
+    meta: {
+      login: false,
+      title: '註冊'
+    }
+  },
+  {
+    path: '/upload',
+    name: 'Upload',
+    component: () => import(/* webpackChunkName: "reg" */ '../views/Upload.vue'),
+    meta: {
+      login: true,
+      title: '上架'
+    }
+  },
+  {
+    path: '/order',
+    name: 'Order',
+    component: () => import(/* webpackChunkName: "order" */ '../views/Order.vue'),
+    meta: {
+      login: true,
+      title: '訂單資訊'
     }
   }
 ]
 
 const router = new VueRouter({
   routes
-})
-
-router.beforeEach((to, from, next) => {
-  if (to.meta.login && !StorageEvent.state.user) {
-    next('/login')
-  } else {
-    next()
-  }
 })
 
 export default router
