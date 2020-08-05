@@ -31,6 +31,8 @@
     height: 100%;
 }
 
+
+
 .nav-item .dropdown-toggle::after{
     display: inline-block;
     margin-left: .255em;
@@ -127,6 +129,16 @@
     } 
 }
 
+footer{
+    z-index: 9999;
+    margin-top: 10px;
+}
+
+#webcontent {
+    margin-top: 68px;
+    min-height: calc(100vh - 68px - 148px);
+}
+
 
 // home-------------------------------------------------------------------------------------------
 
@@ -191,6 +203,8 @@
         color: var(--do);
     }
 }
+
+
 }
 @media (max-width:768px){
     .swiper {
@@ -218,6 +232,7 @@
 
 #reg{
     border-radius: 5%;
+    margin: 75px;
     h1{
         color: var(--dg);
     }
@@ -271,10 +286,7 @@
 
 // book----------------------------------------------------
 
-#webcontent {
-    margin-top: 68px;
-    min-height: calc(100vh - 68px - 147.31px);
-}
+
 
 #book li{
     a{

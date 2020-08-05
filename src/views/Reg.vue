@@ -1,6 +1,6 @@
 <template lang="pug">
 #reg(class="h-100 d-flex justify-content-center align-items-center")
-  b-container(class="d-flex justify-content-center align-items-center")
+  b-container(class="d-flex justify-content-center align-items-center mt-5 mb-5")
     b-row
       b-col(cols="6")
         b-img(src='../../public/img/about.jpg' class="img-1")
