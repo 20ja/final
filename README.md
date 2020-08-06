@@ -1,5 +1,7 @@
 # front
 
+https://20ja.github.io/final/
+
 ## Project setup
 ```
 npm install
@@ -20,5 +22,3 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
