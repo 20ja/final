@@ -19,8 +19,8 @@ module.exports = {
       // fullscreen: 全螢幕，隱藏所有瀏覽器 UI
       // standard: 隱藏標準瀏覽器 UI ，如 URL 欄
       // minimal-ui: 有最小導覽列 UI，Chrome不支援
-      display: 'standalone',
-    
+      display: 'standalone'
+
     }
   }
 }

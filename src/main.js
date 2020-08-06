@@ -18,7 +18,7 @@ import VueAxios from 'vue-axios'
 
 import VuePageTransition from 'vue-page-transition'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-import 'swiper/swiper-bundle.css'
+import './styles/swiper-bundle.css'
 import GoogleLogin from 'vue-google-login'
 import 'animate.min.css'
 

@@ -20,7 +20,7 @@
         ></b-carousel-slide>
 
         <!-- Slides with custom text -->
-        <b-carousel-slide img-src="../../public/img/02.jpg">
+        <b-carousel-slide :img-src="'./img/02.jpg'">
         </b-carousel-slide>
 
         <!-- Slides with img slot -->
