@@ -23,20 +23,17 @@ const app = express()
 app.use(bodyParser.json())
 app.use(cors({
   origin (origin, callback) {
-    // 直接開網頁，不是 ajax 時，origin 是 undefined
-    if (origin === undefined) {
+    if (process.env.ALLOW_CORS === 'true') {
+      // 開發環境，允許
+      callback(null, true)
+    } else if (origin === undefined) {
+      callback(null, true)
+    } else if (origin.includes('github')) {
+      // 非開發環境，但是從 github 過來，允許
       callback(null, true)
     } else {
-      if (process.env.ALLOW_CORS === 'true') {
-        // 開發環境，允許
-        callback(null, true)
-      } else if (origin.includes('github')) {
-        // 非開發環境，但是從 github 過來，允許
-        callback(null, true)
-      } else {
-        // 不是開發也不是從 github 過來，拒絕
-        callback(new Error('Not allowed'), false)
-      }
+      // 不是開發也不是從 github 過來，拒絕
+      callback(new Error('Not allowed'), false)
     }
   },
   credentials: true
@@ -223,7 +220,7 @@ app.post('/upload', async (req, res) => {
           }
         } else {
           for (const i of req.files) {
-            name.push(path.basename(i.path))
+            name.push(path.basename(i.filename))
           }
         }
         const cover = name[0]
