@@ -26,6 +26,8 @@ app.use(cors({
     if (process.env.ALLOW_CORS === 'true') {
       // 開發環境，允許
       callback(null, true)
+    } else if (origin === undefined) {
+      callback(null, true)
     } else if (origin.includes('github')) {
       // 非開發環境，但是從 github 過來，允許
       callback(null, true)
