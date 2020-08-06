@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eae9539291e45007aa74",
+    "revision": "83de70ac2bf551a8f212",
     "url": "css/app.0e8d3870.css"
   },
   {
@@ -624,7 +624,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "img/newbook/09.png"
   },
   {
-    "revision": "8645497988f73ebe79d28e3118f51551",
+    "revision": "b25cc63d7018fb643d00d5d043bbb735",
     "url": "index.html"
   },
   {
@@ -632,8 +632,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/about.40151256.js"
   },
   {
-    "revision": "eae9539291e45007aa74",
-    "url": "js/app.8e8c88b4.js"
+    "revision": "83de70ac2bf551a8f212",
+    "url": "js/app.5b9c152d.js"
   },
   {
     "revision": "105bbd69f5e2d9d94ee4",
@@ -644,8 +644,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/book~buy~reg.e87828c5.js"
   },
   {
-    "revision": "305086531ce1ca552c7d",
-    "url": "js/buy.2c0cd247.js"
+    "revision": "1a757254c5f2832720f0",
+    "url": "js/buy.3b6d15dc.js"
   },
   {
     "revision": "2999b26ab631f8e26048",
