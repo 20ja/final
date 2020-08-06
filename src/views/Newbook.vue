@@ -10,7 +10,7 @@
           b-img(:src="'./img/newbook/01.jpg'" left fluid)
       b-row.animate__animated.animate__fadeInRight
         b-col.h-50(cols='6' class='p-0')
-          b-img(:src="'.img/newbook/02.jpg'" right fluid)
+          b-img(:src="'./img/newbook/02.jpg'" right fluid)
         b-col.h-50(cols='6' style='background-color: var(--g)').d-flex.flex-column.mt-5
           h1.text-center NO.2
           h4.text-center.text-white 印刷用紙サンプルBOOK: 200種類以上の印刷用紙に、同絵柄．文字を刷って１冊に。
