@@ -17,10 +17,10 @@
   h3.text-center.mb-5 您可能也感興趣
   carousel
     template(slot='prev' :number="3" :boolean="true" :nav="true" )
-    img(src='../../public/img/newbook/01.jpg')
-    img(src='../../public/img/newbook/02.jpg')
-    img(src='../../public/img/newbook/03.jpg')
-    img(src='../../public/img/newbook/04.jpg')
+    img(:src="'../../public/img/newbook/01.jpg'")
+    img(:src="'../../public/img/newbook/02.jpg'")
+    img(:src="'../../public/img/newbook/03.jpg'")
+    img(:src="'../../public/img/newbook/04.jpg'")
     template(slot='next')
 </template>
 

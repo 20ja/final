@@ -3,7 +3,7 @@
   b-container(class="d-flex justify-content-center align-items-center mt-5 mb-5")
     b-row
       b-col(cols="6")
-        b-img(src='../../public/img/about.jpg' class="img-1")
+        b-img(:src="'./img/about.jpg'" class="img-1")
       b-col(cols="6").justify-content-center.align-items-center.d-flex
         div.rall
           h1.text-center 註冊

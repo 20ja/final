@@ -3,7 +3,7 @@
     <header></header>
     <div>
       <b-navbar toggleable="lg" type="light" variant="light" fixed="top">
-        <b-navbar-brand to="/"><img src="../public/img/logo橫.png" height="40px" alt="LOGO"></b-navbar-brand>
+        <b-navbar-brand to="/"><img :src="'./img/logo橫.png'" height="40px" alt="LOGO"></b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <!-- Right aligned nav items -->
@@ -62,7 +62,7 @@
       <div class="container-fluid bg-light text-dark pt-2">
         <div class="row">
           <div class="col-6 col-md-3 d-flex justify-content-center">
-            <img src="../../front/public/img/logo.png" class="rounded-circle">
+            <img :src="'./img/logo.png'" class="rounded-circle">
           </div>
           <div class="col-6 col-md-3">
             <b>Address</b>
