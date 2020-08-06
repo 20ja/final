@@ -452,7 +452,7 @@ app.get('/order', async (req, res) => {
 // 查詢書籍
 app.get('/search/:title', async (req, res) => {
   try {
-    const result = await db.products.find({ title: { $regex: req.params.title } })
+    const result = await db.products.find({ title: { $regex: new RegExp('^' + req.params.title.toLowerCase(), 'i') } })
     console.log(result)
     res.send({ success: true, message: '', result })
   } catch (error) {
