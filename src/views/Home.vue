@@ -42,23 +42,23 @@
     <div class="banner-s pt-1">
       <h3 style="text-align:center" class="mt-4 mb-5">新書推薦</h3>
       <swiper class="swiper mb-2" :options="swiperOption">
-        <swiper-slide><img src="../public/img/newbook/01.jpg'" alt="new1"><div>Tokyo TDC Vol.30: The Best in International Typography & Design</div>
+        <swiper-slide><img :src="'./img/newbook/01.jpg'" alt="new1"><div>Tokyo TDC Vol.30: The Best in International Typography & Design</div>
         <p>79折 NT1659元</p></swiper-slide>
-        <swiper-slide><img src="../public/img/newbook/02.jpg" alt="new2">印刷用紙サンプルBOOK: 200種類以上の印刷用紙に、同絵柄．文字を刷って１冊に
+        <swiper-slide><img :src="'./img/newbook/02.jpg'" alt="new2">印刷用紙サンプルBOOK: 200種類以上の印刷用紙に、同絵柄．文字を刷って１冊に
         <p>85折 NT2066元</p></swiper-slide>
-        <swiper-slide><img src="../public/img/newbook/03.png" alt="new3">佐藤大提問中!:日本設計鬼才與17組大師的非官方對談集
+        <swiper-slide><img :src="'./img/newbook/03.png'" alt="new3">佐藤大提問中!:日本設計鬼才與17組大師的非官方對談集
         <p>79折 NT332元</p></swiper-slide>
-        <swiper-slide><img src="../public/img/newbook/04.jpg" alt="new4">Keep in Touch: Contemporary Design for Invitation, Postcards, Stamps & Seals
+        <swiper-slide><img :src="'./img/newbook/04.jpg'" alt="new4">Keep in Touch: Contemporary Design for Invitation, Postcards, Stamps & Seals
         <p>79折 NT1106元</p></swiper-slide>
-        <swiper-slide><img src="../public/img/newbook/05.jpg" alt="new5">Thinking in Services: Encoding and Expressing Strategy through Design
+        <swiper-slide><img :src="'./img/newbook/05.jpg'" alt="new5">Thinking in Services: Encoding and Expressing Strategy through Design
         <p>79折 NT1304元</p></swiper-slide>
-        <swiper-slide><img src="../public/img/newbook/06.jpg" alt="new6">Fashion Illustration: Outfit of the Day
+        <swiper-slide><img :src="'./img/newbook/06.jpg'" alt="new6">Fashion Illustration: Outfit of the Day
         <p>79折 NT632元</p></swiper-slide>
-        <swiper-slide><img src="../public/img/newbook/07.jpg" alt="new7">Optimum Type: Custom Typography Design and Application
+        <swiper-slide><img :src="'./img/newbook/07.jpg'" alt="new7">Optimum Type: Custom Typography Design and Application
         <p>79折 NT1106元</p></swiper-slide>
-        <swiper-slide><img src="../public/img/newbook/08.jpg" alt="new8">50 Years of Japanese Logotypes and Symbol Marks
+        <swiper-slide><img :src="'./img/newbook/08.jpg'" alt="new8">50 Years of Japanese Logotypes and Symbol Marks
         <p>79折 NT1264元</p></swiper-slide>
-        <swiper-slide><img src="../public/img/newbook/09.png" alt="new9">Originality in Japanese Layout Design &emsp;&emsp;&emsp;&emsp;&emsp;
+        <swiper-slide><img :src="'./img/newbook/09.png'" alt="new9">Originality in Japanese Layout Design &emsp;&emsp;&emsp;&emsp;&emsp;
         <p>79折 NT1067元</p></swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
         <div class="swiper-scrollbar"></div>
