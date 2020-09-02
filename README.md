@@ -1,6 +1,9 @@
-# front
+# 書店改良設計
 
 https://20ja.github.io/final/
+
+
+
 
 ## Project setup
 ```
