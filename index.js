@@ -11,6 +11,7 @@ import FTPStorage from 'multer-ftp'
 import fs from 'fs'
 import uuidv4 from 'uuidv4'
 import db from './db.js'
+import request from 'request'
 
 const uuid = uuidv4.uuid
 
@@ -279,7 +280,7 @@ app.get('/upload/:name', async (req, res) => {
       res.send({ success: false, message: '找不到圖片' })
     }
   } else {
-    res.redirect('http://' + process.env.FTP_HOST + '/' + process.env.FTP_USER + '/' + req.params.name)
+    req.pipe(request('http://' + process.env.FTP_HOST + '/' + process.env.FTP_USER + '/' + req.params.name)).pipe(res)
   }
 })
 
